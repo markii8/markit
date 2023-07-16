@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    background: #aeaeae;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: #fdfdfd;
+}
+
+.sidebar li {
+    height: 40px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar li .text{
+    color:rgb(125, 119, 119)
+}
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    color: rgb(87, 87, 87);
+    justify-content: center;
+    min-width: 50px;
+    font-size: 20px;
+}
+.sidebar header{
+    position: relative;
+}
+.sidebar .text{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(197, 192, 192);
+}
+header .header-text{
+    display: flex;
+    flex-direction: column;
+}
+.header-text .name {
+    font-weight: 900;
+    color: #5700e3;
+}
+.header-text .profession {
+    margin-top: -2px;
+    font-weight: 900;
+    color: #2452e7;
+}
+
+.sidebar header .toggle{
+    position: absolute  ;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: #5700e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(244, 241, 247);
+    font-size: 20px;
+}
+.sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sidebar li a:hover{
+    background: #5700e3;
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color:white ;
+}
+.sidebar .menu-bar{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
