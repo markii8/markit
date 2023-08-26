@@ -1,0 +1,217 @@
+.cards {
+    margin: 0 auto;
+    max-width: 1067px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 130px;
+}
+
+.cards * {
+    box-sizing: border-box;
+}
+
+.card__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__info i {
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.card__link {
+    color: #64968c;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.showcase {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(107, 3, 3, 0.6)),url('./Images/mapbg.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    height: 140vh;
+    
+}
+/*Utility Class*/
+.text-secondary{
+    color: rgb(94, 4, 4);
+}
+.text-center{
+    text-align: center;
+}
+.bg-light{
+    background: rgb(213, 213, 213);
+}
+.bg-secondary{
+    background: rgb(114, 3, 3);
+}
+.py-0{padding: 16px 0;}
+.py-1{padding: 24px 0;}
+.py-2{padding: 32px 0;}
+.py-3{padding: 48px 0;}
+
+.p-0{padding: 16px 0;}
+.p-1{padding: 24px 0;}
+.p-2{padding: 32px 0;}
+.p-3{padding: 48px 0;}
+.p-4{padding: 1px 0;}
+
+.wrapper {
+    max-width: 1320px;
+    padding: 0 50px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: rgb(55, 2, 2);
+    font-size: 14px;
+    font-weight: 900;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+/*Top Navbar */
+.showcase .navbar-top {
+    width: 100%;
+    display: flex;
+    padding: 0 80px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 0, 0);
+    top: 0;
+    left: 0;
+}
+.showcase .left {
+    display: flex;
+    list-style: none;
+    
+}
+.showcase .left li a{
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(246, 246, 246);
+    padding: 5px 15px;
+}
+.showcase .left li:first-child {
+    font-weight: 900;
+    border-right: 1px solid rgb(241, 238, 238);
+}
+
+.showcase .right {
+    display: flex;
+    list-style: none;
+}
+.showcase .right li a {
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/*Bottom Navbar */
+.showcase .navbar-bottom {
+    width: 100%;
+    background: #6e0202;
+    padding: 16px 37px;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.showcase .navbar-bottom .brand-left{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.showcase .navbar-bottom .menu-right{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.showcase .navbar-bottom .menu-right a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+    color: rgb(236, 226, 226);
+}
+/*Content Style*/
+.showcase .showcase-content{
+    max-width: 850px;
+    margin-top: 15%;
+    padding: 0 95px;
+}
+.showcase .showcase-content h1{
+    color: rgb(240, 240, 240);
+    font-size: 60px;
+    margin: 15px 0;
+}
+.showcase .showcase-content span{
+    color: rgb(19, 176, 35);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.showcase .showcase-content p{
+    color: rgb(228, 228, 228);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.showcase .showcase-content .btn-left{
+    background: linear-gradient(to right, rgb(52, 61, 52), rgb(233, 240, 236));
+}
+.showcase .showcase-content .btn-right{
+    background: linear-gradient(to right, rgb(75, 111, 114), rgb(253, 254, 254));
+}
